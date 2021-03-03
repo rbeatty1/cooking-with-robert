@@ -1,0 +1,29 @@
+@use "../../../../index.scss";
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-container.dark .card-wrapper{
+    background-color: index.$main-green;
+    color: index.$main-light;
+    box-shadow: 1px 2px 2px 1px rgba(75,75,75,.5);
+}
+.card-container.dark .card-wrapper:hover{
+    cursor: pointer;
+    background-color: index.$light-green;
+    color: index.$main-green;
+    box-shadow: 1px 2px 2px 1px rgba(75,75,75,.5);
+}
+.card-container.neutral .card-wrapper{
+    background-color: index.$main-brown;
+    color: index.$main-blue;
+    box-shadow: 1px 2px 2px 1px rgba(125,125,125,.25);
+}
+.card-container.light .card-wrapper{
+    background-color: index.$main-light;
+    color: index.$main-black;
+    box-shadow: 1px 2px 2px 1px rgba(125,125,125,.25);
+}
