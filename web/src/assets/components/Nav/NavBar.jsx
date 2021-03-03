@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import {ROUTE_MAP} from '../../routes/routes.jsx';
-import './NavBar.less';
+import './NavBar.scss';
 
 class NavBar extends Component{
     constructor(props){

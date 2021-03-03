@@ -1,0 +1,18 @@
+@use "../../../index.scss";
+
+.btn{
+    padding: 1rem;
+    border-radius: 2.5px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.btn.main{
+    background-color: index.$main-black;
+    font-weight: 700;
+    color : index.$main-light;
+}
+
+.btn.submit{
+    background-color: index.$main-green;
+}

@@ -1,5 +1,5 @@
 import { Component } from "react";
-
+import "./Button.scss"
 class Button extends Component{
     constructor(props){
         super(props);
@@ -11,6 +11,7 @@ class Button extends Component{
             <button
                 type="button"
                 onclick={this.props.onclick}
+                className="btn main"
             >
                 {this.props.label}
             </button>

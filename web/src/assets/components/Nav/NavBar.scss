@@ -1,5 +1,7 @@
+@use '../../../index';
+
 #nav-bar{
-    background-color: #C3B299;
+    background-color: index.$main-brown;
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
@@ -7,13 +9,13 @@
 
 #nav-bar a,
 #nav-bar a:visited{
-    color: @main-blue;
+    color: index.$main-blue;
     font-weight: bold;
     margin : 0 .5rem;
     text-decoration: none;
 }
 
 #nav-bar a.active{
-    text-decoration: underline overline dotted red;
+    border-bottom : 3px solid index.$main-green
 }
 
